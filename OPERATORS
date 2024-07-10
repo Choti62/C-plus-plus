@@ -1,0 +1,178 @@
+(--**OPERATORS**--) :- Operators are used to perform operations on variables and values.
+
+<<C++ divides the operators into the following groups:>>
+
+.Arithmetic operators
+.Assignment operators
+.Comparison operators
+.Logical operators
+.Bitwise operators
+                               1) Arithmetic operators
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 5, b = 3;
+    
+    // Addition
+    int sum = a + b;
+    cout << "Sum: " << sum << endl;
+    
+    // Subtraction
+    int difference = a - b;
+    cout << "Difference: " << difference << endl;
+    
+    // Multiplication
+    int product = a * b;
+    cout << "Product: " << product << endl;
+    
+    // Division
+    int quotient = a / b;
+    cout << "Quotient: " << quotient << endl;
+    
+    // Modulus
+    int remainder = a % b;
+    cout << "Remainder: " << remainder << endl;
+    
+    return 0;
+}
+                          2)Assignment Operators
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 5;   // Assignment operator (=)
+    cout << "Initial value of a: " << a << endl;
+
+    a += 3;      // Addition assignment operator (+=)  a= a+3
+    cout << "After a += 3: " << a << endl;
+
+    a -= 2;      // Subtraction assignment operator (-=)
+    cout << "After a -= 2: " << a << endl;
+
+    a *= 4;      // Multiplication assignment operator (*=)
+    cout << "After a *= 4: " << a << endl;
+
+    a /= 2;      // Division assignment operator (/=)
+    cout << "After a /= 2: " << a << endl;
+
+    a %= 3;      // Modulus assignment operator (%=)
+    cout << "After a %= 3: " << a << endl;
+
+    int b = 5;   
+    b &= 3;      // Bitwise AND assignment operator (&=)
+    cout << "After b &= 3: " << b << endl;
+
+    b |= 2;      // Bitwise OR assignment operator (|=)
+    cout << "After b |= 2: " << b << endl;
+
+    b ^= 1;      // Bitwise XOR assignment operator (^=)
+    cout << "After b ^= 1: " << b << endl;
+
+    b <<= 2;     // Left shift assignment operator (<<=)
+    cout << "After b <<= 2: " << b << endl;
+
+    b >>= 1;     // Right shift assignment operator (>>=)
+    cout << "After b >>= 1: " << b << endl;
+
+    return 0;
+}
+                             3)Comparison Operators
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 5;
+    int b = 3;
+    int c = 5;
+
+    // Equal to
+    cout << "a == b: " << (a == b) << endl; // false
+    cout << "a == c: " << (a == c) << endl; // true
+
+    // Not equal to
+    cout << "a != b: " << (a != b) << endl; // true
+    cout << "a != c: " << (a != c) << endl; // false
+
+    // Greater than
+    cout << "a > b: " << (a > b) << endl; // true
+    cout << "b > a: " << (b > a) << endl; // false
+
+    // Less than
+    cout << "a < b: " << (a < b) << endl; // false
+    cout << "b < a: " << (b < a) << endl; // true
+
+    // Greater than or equal to
+    cout << "a >= b: " << (a >= b) << endl; // true
+    cout << "a >= c: " << (a >= c) << endl; // true
+    cout << "b >= a: " << (b >= a) << endl; // false
+
+    // Less than or equal to
+    cout << "a <= b: " << (a <= b) << endl; // false
+    cout << "a <= c: " << (a <= c) << endl; // true
+    cout << "b <= a: " << (b <= a) << endl; // true
+
+    return 0;
+}
+                               4_)logical operators
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    bool a = true;
+    bool b = false;
+
+    // Logical AND (&&)
+    cout << "a && b: " << (a && b) << endl; // false
+
+    // Logical OR (||)
+    cout << "a || b: " << (a || b) << endl; // true
+
+    // Logical NOT (!)
+    cout << "!a: " << (!a) << endl; // false
+    cout << "!b: " << (!b) << endl; // true
+
+    // Combining logical operators
+    cout << "(a && !b) || (!a && b): " << ((a && !b) || (!a && b)) << endl; // true
+
+    return 0;
+}
+                            5)Bitwise operators
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    unsigned int a = 5;  // 5 in binary: 0000 0101
+    unsigned int b = 3;  // 3 in binary: 0000 0011
+
+    // Bitwise AND (&)
+    unsigned int andResult = a & b; // 0000 0001 (1 in decimal)
+    cout << "a & b: " << andResult << endl; 
+
+    // Bitwise OR (|)
+    unsigned int orResult = a | b; // 0000 0111 (7 in decimal)
+    cout << "a | b: " << orResult << endl;
+
+    // Bitwise XOR (^)
+    unsigned int xorResult = a ^ b; // 0000 0110 (6 in decimal)
+    cout << "a ^ b: " << xorResult << endl;
+
+    // Bitwise NOT (~)
+    unsigned int notResult = ~a; // 1111 1010 (in a 32-bit system: 4294967290 in decimal for unsigned int)
+    cout << "~a: " << notResult << endl;
+
+    // Left shift (<<)
+    unsigned int leftShiftResult = a << 1; // 0000 1010 (10 in decimal)
+    cout << "a << 1: " << leftShiftResult << endl;
+
+    // Right shift (>>)
+    unsigned int rightShiftResult = a >> 1; // 0000 0010 (2 in decimal)
+    cout << "a >> 1: " << rightShiftResult << endl;
+
+    return 0;
+}
+
