@@ -1,0 +1,46 @@
+ **DATA TYPE**
+
+      int myNum = 5;
+    cout << myNum << endl;
+
+    float myFloatNum = 5.99;
+    cout << myFloatNum << endl;
+
+    double myDoubleNum = 9.98;
+    cout << myDoubleNum << endl;
+
+    char myLetter = 'D';
+    cout << myLetter << endl;
+
+    bool myBoolean = true;
+    cout << myBoolean << endl;
+
+    string myText = "Hello";
+    cout << myText << endl;
+  
+**scientific numbers**:: (A floating point number can also be a scientific number with an "e" to indicate the power of 10:)
+float f1 = 35e3;
+double d1 = 12E4;
+cout << f1;
+cout << d1;
+
+**Character Data Types**
+char myGrade = 'B';
+cout<< myGrade;
+
+char a = 65 , b= 66,c = 67;
+cout<< a;
+cout<< b;
+cout<< c;
+
+**String Data Types**
+
+// Include the string library
+#include <string>
+
+// Create a string variable
+string greeting = "Hello";
+
+// Output string value
+cout << greeting;
+ 
