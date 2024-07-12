@@ -1,0 +1,43 @@
+**STRINGS**
+            (Strings are used for storing text/characters.)
+     1)INTRO
+
+#include<iostream>
+using namespace std;
+int main(){
+string car = "Royal Enfield ";  // string in always in double quotes
+cout<<car<<endl; // for output  : car
+return 0 ;
+}
+  2) String Concatenation
+
+string Firstname  = "shivangi";
+string Lastname = "singh";
+string Fullname = Firstname + " " + Lastname;    //  2ND METHOD FOR CONCATENATE : string fullName = firstName.append(lastName);
+cout<< FullnamE;
+
+ 3)Numbers and Strings **
+
+. If you add two numbers, the result will be a number:
+
+int x= 10;
+int y =20'
+int z = x + y;
+
+.If you add two strings, the result will be a string concatenation:
+ string x = "20";
+string  y = "30";
+string z =  x + y;
+
+4) String Length
+
+To get the length of a string, use the length(), size() function:
+
+It is completely up to you if you want to use length() or size():
+
+string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+cout << "The length of the txt string is: " << txt.length(); // cout << "The length of the txt string is: " << txt.size();
+
+5)Access Strings ##
+
+
