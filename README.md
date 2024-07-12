@@ -21,7 +21,7 @@ return 0;
  
  type variableName = value;
 
- int myNum - 15 ;
+ int myNum = 15 ;
  cout<< myNum;
 
   .declare multiple variable
