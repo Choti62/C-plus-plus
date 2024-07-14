@@ -38,6 +38,60 @@ It is completely up to you if you want to use length() or size():
 string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 cout << "The length of the txt string is: " << txt.length(); // cout << "The length of the txt string is: " << txt.size();
 
-5)Access Strings ##
+@@ 5)Access Strings ##
 
+You can access the characters in a string by referring to its index number inside square brackets [].
+
+string myString = "Hello";
+cout << myString[0]; // print 1st character
+cout << myString[myString.length() - 1]; //print last character 
+
+!! 6)Special Characters  ##
+
+#include <iostream>
+using namespace std;
+
+int main() {
+string txt1 = "We are the so-called \"Vikings\" from the north.";  //We are the so-called "Vikings" from the north.
+string txt2 = "It\'s alright.";                                    //It's alright.
+string txt3 = "The character \\ is called backslash.";             //The character \ is called backslash.
+
+  cout << txt1<<endl;
+  cout << txt2<<endl;
+  cout << txt3<<endl;
+
+  return 0;
+}
+
+$$ 7) User Input Strings **
+
+string fullName;
+cout << "Type your full name: ";
+getline (cin, fullName);           //nextline use
+cout << "Your name is: " << fullName;
+
+% % % 8) Omitting Namespace >>
+
+#include <iostream>
+#include <string>
+
+int main() {
+  std::string greeting = "Hello"; //hello
+  std::cout << greeting;
+  return 0;
+}
+
+"""  9} Style Strings """
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string greeting1 = "Hello";  // Regular String
+  char greeting2[] = "Hello";  // C-Style String (an array of characters)  //hello hello 
+  cout << greeting1 << "\n";
+  cout << greeting2;
+  return 0;
+}
 
